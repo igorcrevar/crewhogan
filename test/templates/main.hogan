@@ -1,0 +1,1 @@
+{{#users}}{{> partials/user.hogan }}{{/users}} {{> partials/footer.hogan }}

@@ -1,0 +1,24 @@
+{
+  "name": "crewhogan"
+  , "description": "Hogan.js for nodejs and express 3.x. Caches compiled templates and auto resolve all partials."
+  , "version": "1.0.0"
+  , "keywords": ["hogan.js", "mustache", "template", "express"]
+  , "main": "./lib/template.js"
+  , "homepage": "https://github.com/igorcrevar/crewhogan"
+  , "author": "Igor Crevar"
+  , "repository": {
+	"type": "git"
+	, "url": "https://github.com/igorcrevar/crewhogan.git"
+  }
+  , "licenses": [
+    { "type": "MIT "
+      , "url": "http://opensource.org/licenses/MIT"
+    }
+  ]
+  , "devDependencies": {
+    "mocha": "*"
+  }
+  , "dependencies": {
+    "hogan.js": ">=2.0.0"
+  }
+}
