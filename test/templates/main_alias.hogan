@@ -1,0 +1,1 @@
+text: {{> partials_alias::footer.hogan }}
