@@ -1,7 +1,7 @@
 {
   "name": "crewhogan"
   , "description": "Hogan.js for nodejs and express 3.x. Caches compiled templates and auto resolve all partials."
-  , "version": "1.0.1"
+  , "version": "1.0.2"
   , "keywords": ["hogan.js", "mustache", "template", "express"]
   , "main": "./lib/template.js"
   , "homepage": "https://github.com/igorcrevar/crewhogan"

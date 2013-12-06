@@ -39,8 +39,8 @@ var crewhoganObj = require('crewhogan')(false, {
 // resolves template inside __dirname/templates/main/index.hogan
 var html = crewhoganObj.render('main/index', data);
 res.send(html)
-
-// and in index.html
+...
+// and in __dirname/templates/main/index.hogan
 {{> main/partials/some_partial }}
 // will load partial __dirname/templates/main/partials/some_partial.hogan
 ```
@@ -59,8 +59,8 @@ var crewhoganObj = require('crewhogan')(false, {
 ...
 var html = crewhoganObj.render('templates_alias::main/index', data);
 // will render data from __dirname/templates/main/index.html
-
-// and in index.hogan
+...
+// and in __dirname/templates/main/index.html
 {{> partials_alias::some_partial }}
 // will load partial __dirname/templates/main/partials/some_partial.html
 ```
