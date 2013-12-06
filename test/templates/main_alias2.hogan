@@ -1,1 +1,1 @@
-footers: {{> partials_alias::footer.hogan }} {{> partials/footer.hogan }}
+footers: {{> partials_alias*::*footer }} {{> partials/footer }}

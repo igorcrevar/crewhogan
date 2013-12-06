@@ -49,7 +49,7 @@ describe('template.js', function() {
 
         it('render templates express style', function() {
             require('./../lib/template.js')(expressApp); 
-            expressApp.func[expressApp.get('view engine')](expressApp.get('views') + "/main.hogan", data, function(error, output) {
+            expressApp.func[expressApp.get('view engine')](expressApp.get('views') + "/main", data, function(error, output) {
                 assert.equal(output, resultShouldBe);
             });            
         });
@@ -88,9 +88,11 @@ describe('template.js', function() {
                     templates_alias: __dirname + '/templates',
                     partials_alias: __dirname + '/templates/partials'
                 },
-                baseDir: __dirname + '/templates'
+                aliasSeparator: '*::*',
+                baseDir: __dirname + '/templates',
+                templateExtension: '.hogan'
             });
-            var output = crewhoganObj.render('main_alias2.hogan', data);
+            var output = crewhoganObj.render('main_alias2', data);
             assert.equal(output, "footers: Hello from inner space! Hello from inner space!");       
         });
     });
